@@ -10,3 +10,5 @@ class BreastcancerModel:
         self.classifier.add(Dense(units = 1, activation = 'sigmoid')) # To break the result, we also classify 2 classes ; output layer
     def load_model(self):
         return self.classifier
+    def predict(self,X):
+        return self.classifier(X)

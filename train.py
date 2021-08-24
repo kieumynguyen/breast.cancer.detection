@@ -1,3 +1,4 @@
+from scr.utils import plot_performance
 from scr.model import BreastcancerModel
 import pandas as pd
 #load data
@@ -14,3 +15,4 @@ history=classifier.fit(X_train, Y_train, batch_size = 1, epochs = 20 )
 #T=0.5
 #Y_pred = classifier.predict(X_test)
 #Y_pred = [ 1 if y=T   else 0 for y in Y_pred ]
+plot_performance(history)
