@@ -1,7 +1,7 @@
 from keras.models import Sequential #  one model in  keras
 from keras.layers import Dense # dense is 1 layer
 
-class BreastcancerModel:
+class BreastCancerModel:
     def __init__(self):
         self.classifier = Sequential() # Initialising the ANN creates a blank model
         self.classifier.add(Dense(units = 16, activation = 'relu', input_dim = 30)) # create layer; units =16 (nodes) is input dim= 30

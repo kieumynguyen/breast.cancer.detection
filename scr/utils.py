@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-def plot_performance(history):
+def plot_model(history):
     plt.figure()
     plt.plot(history.history['loss'])
     plt.plot(history.history['accuracy'])
