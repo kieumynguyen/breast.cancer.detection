@@ -1,3 +1,3 @@
 #!/bin/bash
-python ./src/get_data.py
+python ./scr/get_data.py
 unzip ./data/data.zip -d ./data
