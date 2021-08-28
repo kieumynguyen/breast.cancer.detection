@@ -1,31 +1,44 @@
+import requests
 import os
 import shutil
-import requests
+from zipfile import Zipfile
 
-URL = 'https://drive.google.com/file/d/1gdRFCzpqp_7ESq211_mX7rcBuq8yjlqX/view?usp=sharing'
-TARGET_PATH = 'data/hymenoptera_data.zip'
+FILE_ID = '1-njFEjT2m9_YyjVkLdEkpBr-HWmtMwGP'
+DESTINATION = './data/breastcancer.zip'
 
-def download_file_from_pytorch(url, target_path):
-    response = requests.get(url, stream=True)
-    save_response_content(response, target_path)
+def download_file_from_google_drive(id, destination):
+    URL = "https://docs.google.com/uc?export=download"
 
-def save_response_content(response, target_path):
-    CHUNK_SIZE = 512
+    session = requests.Session()
 
-    with open(target_path, "wb") as f:
+    response = session.get(URL, params = { 'id' : id }, stream = True)
+    token = get_confirm_token(response)
+
+    if token:
+        params = { 'id' : id, 'confirm' : token }
+        response = session.get(URL, params = params, stream = True)
+
+    save_response_content(response, destination)
+
+def get_confirm_token(response):
+    for key, value in response.cookies.items():
+        if key.startswith('download_warning'):
+            return value
+
+    return None
+
+def save_response_content(response, destination):
+    CHUNK_SIZE = 32768
+
+    with open(destination, "wb") as f:
         for chunk in response.iter_content(CHUNK_SIZE):
-            if chunk:  # filter out keep-alive new chunks
+            if chunk: # filter out keep-alive new chunks
                 f.write(chunk)
 
-
 if __name__ == '__main__':
-    print('Start download data')
     if os.path.exists('./data'):
         shutil.rmtree('./data')
     os.makedirs('./data')
-    download_file_from_pytorch(URL, TARGET_PATH)
-    print('Download done')
-
-    with ZipFile('./data/hymenoptera_data.zip', 'r') as zip_file:
+    download_file_from_google_drive(FILE_ID, DESTINATION)
+    with ZipFile('./data/breastcancer.zip', 'r') as zip_file:
         zip_file.extractall('./data')
-    print('Success unzip file')

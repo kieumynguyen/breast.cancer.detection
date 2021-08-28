@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+
 def plot_model(history):
     plt.figure()
     plt.plot(history.history['loss'])
