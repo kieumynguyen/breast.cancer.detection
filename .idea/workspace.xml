@@ -3,15 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="46db5137-dcad-40d7-b902-8034c9c668b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/setup_data.sh.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/xtest.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data1/xtest.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/xtrain.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data1/xtrain.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ytest.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data1/ytest.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ytrain.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data1/ytrain.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirement.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scr/get_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/scr/get_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scr/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/scr/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirement.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/get_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/get_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
