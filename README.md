@@ -1,7 +1,7 @@
-﻿ Breast Cancer Detection
-**Introduction**
+﻿ # Breast Cancer Detection
+# **Introduction**
 
-**Installation**
+# **Installation**
 Create virtual environment
 To set up your python environment to run the code in this repository, follow the instructions below.
 1. *Create (and activate) a new environment with Python 3.6.*
@@ -22,7 +22,7 @@ cd breast-cancer-detection
 pip install -r requirements.txt
 ```
 
-**Download and information of dataset**
+# **Download and information of dataset**
 
 Go to folder data, there are 4 files (xtest, ytest, xtrain, ytrain).
 
@@ -34,14 +34,14 @@ The expected 'output' (a 0 if benign and a 1 if malignant) as the 'Y' values.
 
 There are 2 classes, 4 layers.
 
-**Usage**
+# **Usage**
 
-**How to run**
+# **How to run**
 ```bash
 python train.py
 ```
 
-**Expected output:**
+# **Expected output:**
 
 
 *Make sure:*
