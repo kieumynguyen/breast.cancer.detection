@@ -1,5 +1,5 @@
-from scr.model import BreastCancerModel
-from scr.utils import plot_model
+from src.model import BreastCancerModel
+from src.utils import plot_model
 
 import pandas as pd
 

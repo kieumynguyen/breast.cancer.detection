@@ -1,5 +1,5 @@
-from scr.utils import plot_model
-from scr.model import BreastCancerModel
+from src.utils import plot_model
+from src.model import BreastCancerModel
 import pandas as pd
 #load data
 X_train = pd.read_csv("data/xtrain.csv", header=None)
