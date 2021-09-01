@@ -1,10 +1,10 @@
 ﻿ # Breast Cancer Detection
-# **Introduction**
+# Introduction
 <img src="https://imgur.com/OupRcxj"
-# **Installation**
+# Installation
 Create virtual environment
 To set up your python environment to run the code in this repository, follow the instructions below.
-1. *Create (and activate) a new environment with Python 3.8.3
+1. *Create (and activate) a new environment with Python 3.8.3*
 Linux or Mac:
 ```bash
 conda create -n myenv python=3.8.3
@@ -18,11 +18,11 @@ conda activate myenv
 2. *Clone the repository (if you haven't already!), and navigate to the breast.cancer.detection folder. Then, install several dependencies.*
 ```bash
 git clone https://github.com/kieumynguyen/breast.cancer.detection.git
-cd breast-cancer-detection
+cd breast.cancer.detection
 pip install -r requirements.txt
 ```
 
-# **Download and information of dataset**
+# Download and information of dataset
 
 Go to folder data, there are 4 files (xtest, ytest, xtrain, ytrain).
 
@@ -34,19 +34,19 @@ The expected 'output' (a 0 if benign and a 1 if malignant) as the 'Y' values.
 
 There are 2 classes, 4 layers.
 
-# **Usage**
+# Usage
 
-# **How to run**
+# How to run
 ```bash
 python train.py
 ```
-# **Expected output:**
+# Expected output:
 
 *Make sure:*
 the dataset follow the structure described below
 folders models (for training) and results (testing) exists
 After the models are trained, run:
-# ** How to test**
+# How to test
 ```bash
 python test.py
 ```
