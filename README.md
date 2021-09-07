@@ -7,13 +7,13 @@ To set up your python environment to run the code in this repository, follow the
 1. *Create (and activate) a new environment with Python 3.8.3*
 Linux or Mac:
 ```bash
-conda create -n myenv python=3.8.3
-conda activate myenv
+conda create -n breast-cancer python=3.8
+conda activate breast-cancer
 ```   
 Windows:
 ```bash
-conda create -n python=3.8.3
-conda activate myenv
+conda create -n breast-cancer python=3.8
+conda activate breast-cancer
 ```
 2. *Clone the repository (if you haven't already!), and navigate to the breast.cancer.detection folder. Then, install several dependencies.*
 ```bash
